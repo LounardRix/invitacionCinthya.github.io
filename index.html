@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los XV años de Cinthya Sherlyn</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <meta property="og:image" content="quin_1.jpg" />
+  <meta property="og:title" content="Los XV años de Jessica Bribiesca" />
+  <meta property="og:description" content="¡Una celebración inigualable!" />
+  <meta property="og:url" content="URL_DE_TU_PAGINA" />
+
+</head>
+
+<body>
+
+  <div id="contenido"></div>
+
+  <script>
+
+    const fechaDeFiesta = new Date("2025-03-22");
+    const fechaActual = new Date();
+
+    const contenidoDiv = document.getElementById("contenido");
+
+    if (fechaActual >= fechaDeFiesta) {
+      contenidoDiv.innerHTML = `
+        <section id="informacion-fiesta" class="animate">
+        <h2 style="text-align: center; font-size: 70px;">¡Gracias por asistir a esta gran Celebracion!</i></h2>
+        <h1 style="text-align: center;"><strong>Fecha:</strong> 22 - 03 - 2025</h1>
+        <p style="text-align: center;"> Nos alegra haber podido tenerte aqui con nosotros en esta ocasion tan unica!</p>
+        </section>
+      `;
+    } else {
+
+    }
+  </script>
+
+  <header>
+    <div class="hero">
+      <img src="fondo_vino.jpeg" alt="Imagen de portada">
+      <div class="hero-text">
+        <h1 style="font-size: 30px;">Mis</h1>
+        <h1 style="font-size: 110px;">XV años</h1>
+        <h1 style="font-size: 100px;">Cinthya Sherlyn</h1>
+        <p style="font-size: 50px;">¡Una celebración inigualable!</p>
+      </div>
+    </div>
+  </header>
+
+  <audio id="audio" controls>
+    <source src="musica.mp3" type="audio/mp3">
+    Tu navegador no soporta audio.
+  </audio>
+
+  <section id="fotos-cumpleañera" class="animate">
+    <div class="foto-container">
+      <img src="quin_1.jpg" alt="Foto de Jessica">
+      <p>Cinthya Sherlyn Lozano Castro</p>
+    </div>
+  </section>
+
+
+
+  <section id="informacion-fiesta" class="animate">
+    <h2 style="text-align: center; font-size: 70px;">¡Una gran fiesta; un día inolvidable!</i></h2>
+    <h1 style="text-align: center;"><strong>Fecha:</strong> 22 - 03 - 2025</h1>
+    <p style="text-align: center; font-size: 30px;"> ¡Estaremos encantados de contar contigo en una ocasion así de
+      especial!</p>
+    <p style="text-align: center; font-size: 30px;">Queremos compartir este gran momento con todos ustedes, preparando
+      una fiesta sin igual con gente maravillosa, momentos emotivos, risas y muchas experiencias increíbles. ¡No te
+      pierdas esta oportunidad!
+    </p>
+  </section>
+
+  <br>
+  <br>
+
+  <section id="contador" class="animate">
+    <h2 style="font-size: 50px;">La ceremonia comenzará dentro de:</h2>
+    <div class="contador-container">
+      <div class="contador-cuadro">
+        <span id="dias">00</span>
+        <p>días</p>
+      </div>
+      <div class="contador-cuadro">
+        <span id="horas">00</span>
+        <p>horas</p>
+      </div>
+      <div class="contador-cuadro">
+        <span id="minutos">00</span>
+        <p>minutos</p>
+      </div>
+      <div class="contador-cuadro">
+        <span id="segundos">00</span>
+        <p>segundos</p>
+      </div>
+    </div>
+    <h2 style="font-size: 50px;">¡Aparta la fecha!</h2>
+  </section>
+
+  <section id="agradecimientos" class="animate">
+    <div class="agradecimientos-container">
+      <div class="cuadro">
+        <h2 style="font-size: 40px;">Con la bendición de Dios y agradeciendo a mis padres:</h2>
+        <p class="centrado" style="font-size: 30px;">Jesus Gilberto Lozano</p>
+        <p class="centrado" style="font-size: 15px;">Y</p>
+        <p class="centrado" style="font-size: 30px;">Gloria Rayon</p>
+        <h2 style="font-size: 40px;">Y a mis padrinos</h2>
+        <p class="centrado" style="font-size: 30px;">Gerardo Martinez</p>
+        <p class="centrado" style="font-size: 15px;">Y</p>
+        <p class="centrado" style="font-size: 30px;">Maria Chavez</p>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="detalles-misa" class="animate">
+    <h2 style="text-align: center; font-size: 50px;">¿En dónde será?</h2>
+
+    <div class="salón-fiestas-container">
+      <div class="cuadro">
+        <h2 style="font-size: 40px;">¡Acompañanos en la ceremonia reigiosa en la parroquia de Santiaguito Apostol, en
+          dirección</h2>
+        <p style="font-size: 30px;">C. Riva Palacio Manzana 016, Chalco Centro, 56600 Chalco de Díaz Covarrubias, Méx.</p>
+        <img src="iglesia.png" alt="Imagen de la parroquia" style="width: 90%; margin: 10px;">
+        <button class="ver-en-mapa-btn" onclick="window.open('https://maps.app.goo.gl/3kFfAyVQ4sbJ8AHo9', '_blank')">Ver
+          en el mapa</button>
+        </p>
+      </div>
+
+      <div class="cuadro">
+        <h2 style="font-size: 40px;">Despues de la ceremonia, te esperamos en </h2>
+        <p style="font-size: 30px;">Cda. Los Reyes en esquina con Calle Benito Juarez, en Barrio La Conchita</p>
+        <button class="ver-en-mapa-btn" onclick="window.open('https://maps.app.goo.gl/8VGrcAKGW72GEAKp9', '_blank')">Ver
+          en el mapa</button>
+        <h2 style="font-size: 40px;">¡Te esperamos!</h2>
+        </p>
+      </div>
+      
+    </div>
+
+  </section>
+<!-- 
+  <section id="codigo-vestimenta" class="animate">
+    <h2 style="text-align: center;">Código de Vestimenta</h2>
+    <div class="codigo-vestimenta">
+      <h3>Formal</h3>
+      <img src="vestimenta_formal.jpg" alt="Imagen de vestimenta" style="width: 50%; margin: 20px; height: 30%;">
+      <p>¡Te invitamos a acudir con una vestimenta adecuada y formal para la ocasión!</p>
+    </div>
+  </section>
+ -->
+  <section id="llamada-accion" class="animate">
+    <h2 style="text-align: center; font-size: 24px;">¡Haznos saber si asistiras!</h2>
+    <p style="text-align: center; font-size: 18px;">Por favor, completa los siguientes campos para confirmar tu
+      asistencia antes del 15 de marzo del 2025</p>
+    <form style="text-align: center;">
+      <label for="nombre" style="font-size: 18px;">Nomre(s):</label>
+      <input type="text" id="nombre" name="nombre" style="width: 50%; padding: 10px; font-size: 18px;">
+      <br><br>
+      <label for="apellido" style="font-size: 18px;">Apellido(s):</label>
+      <input type="text" id="apellido" name="apellido" style="width: 50%; padding: 10px; font-size: 18px;">
+      <br><br>
+      <label for="correo" style="font-size: 18px;">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" style="width: 50%; padding: 10px; font-size: 18px;">
+      <br><br>
+      <button onclick="enviarMensaje()"
+        style="background-color: #4CAF50; color: #ffffff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Confirmar
+        asistencia</button>
+    </form>
+  </section>
+
+  <script>
+    function enviarMensaje() {
+      var nombre = document.getElementById("nombre").value;
+      var apellido = document.getElementById("apellido").value;
+      var correo = document.getElementById("correo").value;
+      var mensaje = "¡Hola!, confirmo mi asistencia a la fiesta de Cinthya Sherlyn. Mi nombre es " + nombre + " " + apellido + " y mi correo electrónico es " + correo + ". ¡Muchas gracias por la invitación!";
+      window.open("https://wa.me/525576213432?text=" + encodeURIComponent(mensaje), "_blank");
+    }
+  </script>
+<!-- 
+
+  <section id="galeria" class="animate">
+    <h2 style="text-align: center;">Nuestra festejada especial</h2>
+    <div style="text-align: center;">
+      <img src="quin_2.jpg" alt="Imagen 1" style="width: 60%; margin: 10px;">
+    </div>
+  </section>
+ -->
+
+  <hr>
+
+  <footer>
+    <p>&copy; 2025 Cinthya Sherlyn Lozano Castro. Todos los derechos reservados.</p>
+  </footer>
+  <script src="scrips.js"></script>
+
+</body>
+
+</html>
